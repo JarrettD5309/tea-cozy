@@ -9,14 +9,22 @@ body {
 
 h1 {
     font-size: 3rem;
+    font-weight: bold;
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 2.35rem;
+    font-weight: bold;
 }
 
 h3 {
     font-size: 2rem;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 1.35rem;
+    font-weight: bold;
 }
 
 nav {
@@ -25,6 +33,20 @@ nav {
     align-items: center;
     height: 69px;
     border-bottom: 1px solid seashell;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    z-index: 10;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 1200px;
+    margin: 70px auto 0 auto;
 }
 
 a:link, a:visited {
@@ -41,8 +63,40 @@ a:hover, a:active {
     margin-left: 10px;
 }
 
+.mission-statement {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    background-color: black;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 .nav-links {
     display: flex;
     justify-content: space-around;
     width: 370px;
+}
+
+.tea-container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tea-div {
+    display: inline;
+    margin: 15px;
+}
+
+.tea-img {
+    height: 200px;
+    width: 300px;
+}
+
+#mission {
+  width: 1200px;
+  position: relative;
 }
