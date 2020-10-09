@@ -1,6 +1,7 @@
 html {
     font-size: 22px;
 }
+
 body {
     font-family: Helvetica, sans-serif;
     color: seashell;
@@ -8,6 +9,18 @@ body {
     opacity: 0.9;
     text-align: center;
     margin-bottom: 30px;
+}
+
+a:link, a:visited {
+    color: seashell;
+}
+
+a:hover, a:active {
+    color: #dac8bb;
+}
+
+footer {
+    text-align: left;
 }
 
 h1 {
@@ -35,6 +48,14 @@ h5 {
     font-weight: bold;
 }
 
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 1200px;
+    margin: 70px auto 0 auto;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -47,26 +68,6 @@ nav {
     right: 0;
     background-color: black;
     z-index: 10;
-}
-
-main {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 1200px;
-    margin: 70px auto 0 auto;
-}
-
-footer {
-    text-align: left;
-}
-
-a:link, a:visited {
-    color: seashell;
-}
-
-a:hover, a:active {
-    color: #dac8bb;
 }
 
 .contact-header {
@@ -163,17 +164,6 @@ a:hover, a:active {
     justify-content: space-between;
 }
 
-#mission {
-    width: 100%;
-    position: relative;
-}
-
-#mission-link {
-    padding-top: 70px;
-    margin-top: -70px;
-    width: 100%;
-}
-
 #featured {
     width: 83.3%;
     margin: 70px auto;
@@ -194,6 +184,17 @@ a:hover, a:active {
     padding-top: 48px;
     margin-top: -48px;
     height: 0;
+}
+
+#mission {
+    width: 100%;
+    position: relative;
+}
+
+#mission-link {
+    padding-top: 70px;
+    margin-top: -70px;
+    width: 100%;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -227,5 +228,50 @@ a:hover, a:active {
     #locations {
         background-size: cover;
         background-position: -500px 0;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    html {
+        font-size: 18px;
+    }
+
+    footer {
+        text-align: center;
+    }
+    
+    main {
+        width: 100%;
+    }
+
+    .footer-header {
+        margin-left: 0;
+    }
+
+    .location-div {
+        height: 200px;
+    }
+
+    .logo {
+        height: 40px;
+    }
+
+    .nav-links {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    html {
+        font-size: 16px;
+    }
+
+    nav {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .logo {
+        height: 30px;
     }
 }
