@@ -164,17 +164,18 @@ a:hover, a:active {
 }
 
 #mission {
-  width: 100%;
-  position: relative;
+    width: 100%;
+    position: relative;
 }
 
 #mission-link {
     padding-top: 70px;
     margin-top: -70px;
+    width: 100%;
 }
 
 #featured {
-    width: 1000px;
+    width: 83.3%;
     margin: 70px auto;
 }
 
@@ -193,4 +194,38 @@ a:hover, a:active {
     padding-top: 48px;
     margin-top: -48px;
     height: 0;
+}
+
+@media only screen and (max-width: 1300px) {
+    main {
+        width: 900px;
+    }
+
+    .location-header {
+        margin-top: 60px;
+    }
+
+    #locations {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    main {
+        width: 600px;
+    }
+
+    .tea-img {
+        height: 160px;
+        width: 240px;
+    }
+
+    #featured {
+        width: 100%;
+    }
+
+    #locations {
+        background-size: cover;
+        background-position: -500px 0;
+    }
 }
